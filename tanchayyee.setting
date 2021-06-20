@@ -1,0 +1,44 @@
+{
+    "orderdate": [{
+            "name": "date"
+        }
+    ],
+    "items": {
+        "type": "1",
+        "parts": [{
+                "name": "description",
+                "type":"str",
+                "order":1
+            },
+            
+            {
+                "name": "price",
+                "type":"float",
+                "order":3
+            },
+            {
+                "name": "amount",
+                "type":"float",
+                "order":4
+            },
+            {
+                "name": "qty",
+                "type":"int",
+                "order":2
+            }
+        ]
+    },
+    "total": {
+        "type":"2",
+        "parts": [{
+                "name":"total exclude gst",
+                "location":"first"
+            },  
+            {
+                "name":"total",
+                "location":"last"
+            }
+        ]
+    }
+}
+
